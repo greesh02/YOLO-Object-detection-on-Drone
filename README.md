@@ -1,5 +1,9 @@
 # CV_task - (clone repo from Master branch)
 
+# Description
+
+A ROS-based drone simulation project with integrated real-time object detection using YOLOv4-Tiny. The system performs aerial surveillance on a simulated drone in Gazebo, detecting pedestrians, vehicles, and buses from top-view images using a custom-trained model on drone imagery. Built on Linux with ROS, the project includes autonomous drone control, camera integration, dataset preprocessing, transfer learning, and deep-learning-based computer vision for aerial object detection.
+
 # Dataset
 Initially after seeing the task i realized that i should be doing transfer learning because the existing model(pretrained version) available in darknet was not trained in such kind of images(as the drone captures top view images from certain heights ).So i searche for similar kind of dataset in github and other sites and came accross a dataset which contains images captured by drones with annotations(bounding box info),i had to do certain changes to those annotations ,i wrote a  script for that(as the provided annotations had unwanted infos like truncation,score,and occulution which was not needed by yolo for training).
 
